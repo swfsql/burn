@@ -702,6 +702,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "burn-distributed"
+version = "0.17.0"
+dependencies = [
+ "burn-tensor",
+ "hashbrown 0.15.2",
+]
+
+[[package]]
 name = "burn-fusion"
 version = "0.18.0"
 dependencies = [

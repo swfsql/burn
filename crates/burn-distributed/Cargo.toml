@@ -1,0 +1,25 @@
+[package]
+authors = ["laggui <lagrange.guillaume.1@gmail.com>", "nathanielsimard <nathaniel.simard.42@gmail.com>"]
+categories = ["science"]
+description = "Distributed computing for the Burn framework"
+edition.workspace = true
+keywords = ["deep-learning", "machine-learning", "distributed"]
+license.workspace = true
+name = "burn-distributed"
+readme.workspace = true
+repository = "https://github.com/tracel-ai/burn/tree/main/crates/burn-distributed"
+documentation = "https://docs.rs/burn-distributed"
+version.workspace = true
+
+[features]
+default = ["std"]
+std = ["burn-tensor/std"]
+doc = ["default"]
+
+[dependencies]
+burn-tensor = { path = "../burn-tensor", version = "0.17.0", default-features = false }
+hashbrown = { workspace = true }
+
+[package.metadata.docs.rs]
+features = ["doc"]
+rustdoc-args = ["--cfg", "docsrs"]
