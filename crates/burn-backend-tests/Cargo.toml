@@ -121,6 +121,10 @@ name = "binary_ops"
 harness = false
 
 [[bench]]
+name = "broadcast_ops"
+harness = false
+
+[[bench]]
 name = "cat_max_min_ops"
 harness = false
 
